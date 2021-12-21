@@ -29,6 +29,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#resume">Resume</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -64,7 +65,7 @@
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1" title='"Pro-Calendar"'>
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
@@ -73,7 +74,7 @@
                     </div>
                     <!-- Portfolio Item 2-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2" title='"Whack-A-Mon"'>
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
@@ -82,7 +83,7 @@
                     </div>
                     <!-- Portfolio Item 3-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3" title='"A Resume Builder"'>
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
@@ -182,7 +183,7 @@
             </div>
         </section>
         <!-- Contact/RESUME Section-->
-        <section class="page-section" id="contact">
+        <section class="page-section" id="resume">
             <div class="container">
                 <!-- Contact Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">My Resume</h2>
@@ -198,7 +199,7 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer text-center">
+        <footer class="footer text-center" id="contact">
             <div class="container">
                 <div class="row">
                     <!-- Footer Location-->
@@ -213,9 +214,9 @@
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/AveryBuescher"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/avery-buescher/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://my.indeed.com/p/averyb-qq7uzkq"><i class="fas fa-fw fa-info"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/AveryBuescher" title="Github Profile"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/avery-buescher/" title="Linkedin Profile"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://my.indeed.com/p/averyb-qq7uzkq" title="Indeed Resume"><i class="fas fa-fw fa-info"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
@@ -250,9 +251,25 @@
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">This project was completed as part of a team of 5 for the wake tech capstone project. During the course of the semester, we worked together to design, build, test, and finally present an application based on a provided software requirements specification document. The Pro calendar is a calendar application that aids users with time management. It allows users to create and view events, integrate and synchronize with their google calendar, and categorize their events in order to view metrics on how they spend their time. This project was created using python and the Django framework, as well as HTML, CSS, and a small amount of JavaScript. While it may be your average "To-Do" app on the surface, this project provided in-depth experience with the software development life cycle, version control, and working in a team for an extended project.</p>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/PC2.png" alt="..." />
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/PC3.png" alt="..." />
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/PC1.png" alt="..." />
+                                    <p class="mb-1"><i>(Click images to zoom)</i></p>
+                                    <div class="container click-zoom">
+                                        <label>
+                                            <input type="checkbox">
+                                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/PC2.png" alt="..." />
+                                        </label>
+                                    </div>
+                                    <div class="container click-zoom">
+                                        <label>
+                                            <input type="checkbox">
+                                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/PC3.png" alt="..." />
+                                        </label>
+                                    </div>
+                                    <div class="container click-zoom">
+                                        <label>
+                                            <input type="checkbox">
+                                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/PC1.png" alt="..." />
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -278,7 +295,13 @@
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">A Pokemon themed whack-a-mole style game with trivia elements! Coded in VB.net, this high school project ended up competing in the Future Business Leaders of America National competition in 2017, and won 4th place at the national level in the game and simulation programming category!</p>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/WhackAMon.png" alt="..." />
+                                    <p class="mb-1"><i>(Click images to zoom)</i></p>
+                                    <div class="container click-zoom">
+                                        <label>
+                                            <input type="checkbox">
+                                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/WhackAMon.png" alt="..." />
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -302,10 +325,21 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">A simple website that prompts you for the basic information you'd need for a resume, which you can then download as a pre-formatted word document that you can personalize to suit your own needs! Made using HTML and JavaScript.</p>
+                                    <p class="mb-4">A simple website, previously hosted using Azure, that prompts the user for the basic information you'd need for a resume, which you can then download as a pre-formatted word document that you can personalize to suit your own needs! Made using HTML and JavaScript.</p>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ResumeProject.png" alt="..." />
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ResumeProject2.png" alt="..." />
+                                    <p class="mb-1"><i>(Click images to zoom)</i></p>
+                                    <div class="container click-zoom">
+                                        <label>
+                                            <input type="checkbox">
+                                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ResumeProject.png" alt="..." />
+                                        </label>
+                                    </div>
+                                    <div class="container click-zoom">
+                                        <label>
+                                            <input type="checkbox">
+                                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ResumeProject2.png" alt="..." />
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
